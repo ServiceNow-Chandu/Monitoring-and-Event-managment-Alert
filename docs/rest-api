@@ -1,0 +1,20 @@
+# REST API
+
+Endpoint:
+POST /api/x_<scope>_event_lite/alert
+
+## Sample Payload
+
+{
+  "event_id": "CPU_HIGH_001",
+  "source": "Server-A",
+  "severity": "1",
+  "description": "CPU usage above 95%"
+}
+
+## Response
+
+{
+  "message": "Event received",
+  "sys_id": "<record_sys_id>"
+}
