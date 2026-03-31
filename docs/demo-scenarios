@@ -1,0 +1,30 @@
+# Demo Scenarios
+
+## Scenario 1 – New Alert
+
+Send alert via REST API.
+
+Expected:
+- Event created
+- Incident created
+- Event status = Processed
+
+---
+
+## Scenario 2 – Duplicate Alert
+
+Send same alert again.
+
+Expected:
+- Duplicate detected
+- Event not created
+- No new incident generated
+
+---
+
+## Scenario 3 – Severity Mapping
+
+Send different severity values.
+
+Expected:
+- Priority assigned correctly in incident
