@@ -1,0 +1,23 @@
+# Architecture
+
+## Components
+
+1. Monitoring Tool (Simulated)
+2. Scripted REST API
+3. Event Table (u_event)
+4. Business Rules
+5. Incident Table
+
+## Flow
+
+External Alert
+   ↓
+REST API (/alert)
+   ↓
+Event Table (u_event)
+   ↓
+Deduplication Logic
+   ↓
+Incident Creation
+   ↓
+Event marked as Processed
